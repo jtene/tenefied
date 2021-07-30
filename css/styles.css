@@ -455,3 +455,24 @@ button {
     font-size: 1.6rem;
   }
 }
+
+/* grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+    /* or use the following line to implement the same property */
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    /* or use the following line to implement the same property */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
